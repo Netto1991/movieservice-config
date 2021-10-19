@@ -6,3 +6,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka1:8762/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
